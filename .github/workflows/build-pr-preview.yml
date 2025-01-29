@@ -18,6 +18,10 @@ jobs:
           github-pages: 'false'
           setup-java: 'false'
 
+      - name: Store PR id
+        run: |
+          echo ${{ github.event.number }} > ./target/roq/.pr-id
+
       - name: Publishing blog
         uses: actions/upload-artifact@v4
         with:
