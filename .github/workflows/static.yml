@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Generate Blog
-        uses: quarkiverse/quarkus-roq
+        uses: quarkiverse/quarkus-roq@v1.2.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
