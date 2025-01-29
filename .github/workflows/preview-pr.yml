@@ -17,6 +17,10 @@ jobs:
     permissions:
       pull-requests: write # Required to update PR status comment
     steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
       - name: Store PR id as variable
         id: pr
         run: |
