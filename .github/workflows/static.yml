@@ -19,9 +19,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Generate Blog
-        uses: quarkiverse/quarkus-roq
+        uses: quarkiverse/quarkus-roq@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          maven-executable: 'mvn'
+          maven-build-args: '-DskipTests -Dquarkus.profile=gh-pages'
 
   # Deployment job
   deploy:
