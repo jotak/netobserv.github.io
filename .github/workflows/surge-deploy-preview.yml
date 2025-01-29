@@ -27,7 +27,7 @@ jobs:
       - name: Retrieve PR id
         id: pr
         run: |
-          echo "id=$(<.pr-id)" >> $GITHUB_OUTPUT
+          echo "id=$(<pr-id.txt)" >> $GITHUB_OUTPUT
           rm -f .pr-id
 
       - name: Publishing blog to gh-pages
