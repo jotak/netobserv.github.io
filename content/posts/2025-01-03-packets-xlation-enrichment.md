@@ -6,7 +6,7 @@ tags: eBPF,Services,Monitoring,Troubleshooting
 authors: [msherif1234]
 ---
 
-# Enhancing NetObserv for Kubernetes Service Flows using eBPF: Adding Translated Endpoint Information
+# zzz Enhancing NetObserv for Kubernetes Service Flows using eBPF: Adding Translated Endpoint Information
 
 ## Introduction
 
